@@ -10,12 +10,14 @@ body{
     margin: 0rem;
 }
 
-/*header style*/
+.headerfooter{
+    background-color: rgb(81, 81, 81);
+    color: antiquewhite;
 
-header{
-    background-color: rgb(185, 185, 185);
-    padding: 1rem;    
+    padding: 1rem 1rem;  
 }
+
+/*header style*/
 
 header h1{
     margin-top: 0;
@@ -37,11 +39,6 @@ header li{
 
 /*footer style*/
 
-footer{
-    background-color: rgb(185, 185, 185);
-    padding: 1rem 1rem; 
-}
-
 footer p{
     display: inline;
     font-size: 0.5em;
@@ -54,3 +51,22 @@ footer img{
     float: right;
     
 }
+
+/*Articles*/
+
+.articlebutton{
+    background-color: aliceblue;
+
+    margin: 1em;
+
+
+    border-radius:1em;
+    float:left;
+}
+
+.articlebutton img{
+    width: 10%;
+    box-align: center;
+}
+
+/*Articles*/
