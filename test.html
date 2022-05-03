@@ -18,6 +18,9 @@
                         <a href="test.html">Test</a>
                     </li>
                     <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
+                    <li>
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -25,49 +28,114 @@
         </header>
 
         <main>
-            <p>Placeholder progression bar</p>
-            <h1>Test</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam magni magnam architecto explicabo porro quo sit veniam quidem? Magnam optio dignissimos, obcaecati ab iure natus maxime corrupti consectetur laborum!</p>
+            <div class="regular">
+                <h1>Test</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam magni magnam architecto explicabo porro quo sit veniam quidem? Magnam optio dignissimos!</p>
+            </div>
 
-            <form name="test" method="post" data-netlify="true">
+            <form name="test" method="post" data-netlify="true" class="form">
                 <section>
                     <h2>Starting</h2>
-
-                    <label>When did you start?</label><br>
-                    <label>What caused you to start?</label>
+                    <ul>
+                    <li>
+                        <p>When did you start?</p>
+                        <input type="date" class="bar">
+                    </li>
+                    
+                    <li>
+                        <p>What caused you to start?</p>
+                        <label><input type="radio" name="cause"> Social Circle </label><br>
+                        <label><input type="radio" name="cause"> Aesthetics </label><br>
+                        <label><input type="radio" name="cause"> Stress </label><br>
+                        <label><input type="radio" name="cause"> Other </label><br>
+                    </li>
+                    </ul>
                 </section>
 
                 <section>
                     <h2>The present</h2>
+                    <ul>
+                    <li>
+                        <p>Cigarettes smoked per day</p>
+                        <input type="number" name="cigarettesperday"><br>
+                    </li>
 
-                    <label>How many cigarettes do you smoke per day?</label>
-                    <label>How much does one of your packs costs?</label><br>
-                    <label>When do you feel most likely to smoke?</label><br>
-                    <label>Do people you know also smoke? (Think family, friends, co-workers, etc.)</label>
+                    <li>
+                        <p>Cost of one pack</p>
+                        <input type="number"><br>
+                    </li>
+
+                    <li>
+                        <p>Amount of cigarettes in one pack</p>
+                        <input type="number"><br>
+                    </li>
+
+                    <li>
+                        <p>When do you feel most likely to smoke?</p>
+                        <textarea></textarea>
+                    </li>
+                    
+                    <li>
+                        <p>Are you surrounded by other smokers?</p>
+                        <label><input type="checkbox" name="surrounding"> At Home </label><br>
+                        <label><input type="checkbox" name="surrounding"> At Work </label><br>
+                        <label><input type="checkbox" name="surrounding"> Friendgroup </label><br>
+                    </li>
+                    </ul>
                 </section>
 
                 <section>
                     <h2>Quitting</h2>
+                    <ul>
+                    <li>
+                        <p>Have you tried quitting before?</p>
+                        <label><input type="radio" name="quitting"> Yes </label><br>
+                        <label><input type="radio" name="quitting"> No </label><br>
+                    </li>
+                    
+                    <li> <!--if yes-->
+                        <p>What methods have you tried?</p>
+                        <label><input type="checkbox" name="methods"> Cold-Turkey </label><br>
+                        <label><input type="checkbox" name="methods"> With Coaching </label><br>
+                        <label><input type="checkbox" name="methods"> With Medicine </label><br>
+                    </li>
+                        
+                    <li>
+                        <p>What is the longest you have been clean?</p>
+                        <input name="cleanperiod" placeholder="2 weeks"><br>
+                    </li>
 
-                    <label>Have you tried quitting before?</label>
+                    <li>
+                        <p>What were motivations to quit?</p>
+                        <textarea></textarea><br>
+                    </li>
 
-                    <section> <!--if yes-->
-                        <label>If so, what did you try?</label><br>
-                        <label>Which attempts were most succesful</label><br>
-                        <label>What caused you to start again?</label><br>
-                    </section>
+                    <li>
+                        <p>What caused you to start again?</p>
+                        <textarea></textarea><br>
+                    </li>
 
-                    <label>How do you feel about quitting?</label><br>
-                    <label>What do you fear most when thinking about quitting?</label>
+                    <li>
+                        <p>How do you feel about quitting?</p>
+                        <input type="range" value="0" max="4"><br>
+                    </li>
+
+                    <li>
+                        <p>What do you fear most when thinking about quitting?</p>
+                        <textarea></textarea>
+                    </li>
+                    </ul>
                 </section>
 
-                <section> <!--The actual goal for submition was to see immediate answers in a result page-->
-                    <h3>Submitting</h3>
+                <div id="submit"> <!--The actual goal for submition was to see immediate answers in a result page-->
+                    <h2>Submitting</h2>
                     <p>Good job! You took for first step towards quitting. After you have submitted your test, we will go through it and determine what your best course of action would be. This can take approximately 2-4 working days.</p>
-
-                    <input type="email" name="email" placeholder="example@email.com"/>
-                    <input type="submit"/>
-                </section>
+                    
+                    <div>
+                        <input type="email" name="email" placeholder="example@email.com"/>
+                        <input type="submit"/>
+                    </div>
+                </div>
             </form>
 
         </main>
