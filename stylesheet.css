@@ -8,16 +8,10 @@ body{
     color: rgb(56, 56, 56);
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
+    font-size: 0.75rem;
     
-    margin: 0rem;
-}
-
-.headerfooter{
-    background-color: rgb(20, 115, 101);
-    color: rgb(244, 244, 244);
-
-    padding: 1rem 1rem;  
+    margin: 0;
+    padding: 0;
 }
 
 button{
@@ -40,42 +34,92 @@ button a{
 
 /*header style*/
 
-header h1{
-    margin: 0px;
-    text-align: left;
-    
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.5em 1em;
+
+    background-color: #19323C;
 }
 
-nav ul{
-    list-style: none;
+.navbar a{
+    text-decoration: none;
+    color: #F3F7F0;
+}
+
+.navbar-title{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    align-self: center;
+
+    text-transform: uppercase;
+}
+
+/*.navbar-hamburger{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 24px;
+    height: 16px;
+}
+
+.navbar-hamburger .navbar-line{
+    height: 2px;
+    width: 100%;
+
+    background-color: #F3F7F0;
+    border-radius: 10px;
+}*/
+
+.navbar-links ul{
     margin:1em 0em 0.5em;
     padding:0;
+
+    display: flex;
+    margin-bottom: 0.75rem;
 }
 
-header li{
-    display:inline;
-    padding-right: 1.25em; 
-}
-
-nav a{
-    color: aliceblue;
-
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/*footer style*/
-
-footer p{
-    display: inline;
-    font-size: 0.5em;
-}
-
-footer img{
-    display: inline;
-    width:1.5em;
-    float: right;
+.navbar-links li{
+    list-style: none;
     
+    display:block;
+    padding: 0.75rem;
+}
+
+.navbar-links li a:hover{
+    color: #F2545B;
+}
+
+.navbar-selected{
+    font-weight: bolder;
+    border-top: 2px solid #F2545B;
+    
+}
+
+
+/*footer*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    background-color: #19323C;
+    color: #F3F7F0;
+}
+
+.footer-text{
+    font-size: 0.5rem;
+}
+
+.material-icons:hover{
+    color: #F2545B;
 }
 
 /*Banner*/
@@ -227,6 +271,35 @@ footer img{
         font-size:1em;
     }
     
+    /*header navigation*/
+    .navbar-hamburger{
+          display: none;
+    }
+
+    .navbar-links ul{
+        margin:1em 0em 0.5em;
+        padding:0;
+    
+        display: flex;
+        margin-bottom: 0.75rem;
+    }
+    
+    .navbar-links li{
+        list-style: none;
+        
+        display:block;
+        padding: 0.75rem;
+    }
+    
+    .navbar-links li a:hover{
+        font-weight: bold;
+        color: #F2545B;
+    }
+    
+    .navbar-selected{
+        font-weight: bolder;
+        border-top: 2px solid #F2545B;
+    }
     
     header{
         overflow: hidden;

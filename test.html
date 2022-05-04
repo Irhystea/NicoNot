@@ -3,27 +3,32 @@
     <head>
         <title>NicoNot</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <header class="headerfooter">
-            <h1>NicoNot</h1>
-            <nav>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-title"><a href="index.html">NicoNot</a></div>
+                <!--<a href="#" class="navbar-hamburger">
+                    <span class="navbar-line"></span>
+                    <span class="navbar-line"></span>
+                    <span class="navbar-line"></span>
+                </a>-->
+                <div class="navbar-links">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="test.html">Test</a>
+                        <a href="test.html" class="navbar-selected">Test</a>
                     </li>
                     <li>
                         <a href="articles.html">Articles</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
                 </ul>
+                </div>
             </nav>
         </header>
 
@@ -140,11 +145,11 @@
 
         </main>
 
-        <footer class="headerfooter">
-            <p>
-                Copyright NicoNot BV
-            </p>
-            <img src="images/mail_FILL0_wght400_GRAD0_opsz48.svg">
+        <footer>
+            <div class="footer">
+                <p class="footer-text">Copyright NicoNot BV</p>
+                <span class="material-icons md-8">mail</span>
+            </div>
         </footer>
     </body>
 
