@@ -144,17 +144,23 @@ body{
     font-size: 1.5em;
 }
 
-.banner--text{
-
+/*Explanation*/
+.explanation{
+    margin: 2rem 1rem;    
+    border-bottom: 1px solid rgb(112, 155, 135);
 }
 
+.explanation-steps{
+    background-color: #A93F55;
+    color: #F3F7F0;
+    padding: 1rem;
 
-/*Regular*/
-.regular{
-    margin: 1em;
-    padding: 1em 0em 1em;
+    display: flex;
+    flex-direction: column;
+}
 
-    border-bottom: 1px solid rgb(112, 155, 135);
+.steps-individual{
+    display: flex;
 }
 
 .regular img{
