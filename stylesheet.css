@@ -266,7 +266,19 @@ body{
 }
 
 .regular .primary-button{
-    margin: 2rem;
+    margin: 1rem auto 2rem;
+    display: block;
+}
+
+.collaborators{
+    display: flexbox;
+    justify-content: space-evenly;
+}
+
+.collaborators img{
+    width: 100%;
+    height: 5rem;
+    margin: 1rem 0;
 }
 
 /*Form*/
