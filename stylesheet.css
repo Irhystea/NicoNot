@@ -4,8 +4,8 @@
 }
 
 body{
-    background-color: rgb(233, 233, 233);
-    color: rgb(56, 56, 56);
+    background-color: #F3F7F0;
+    color: #19323C;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.75rem;
@@ -14,22 +14,29 @@ body{
     padding: 0;
 }
 
-button{
-    display: block;
+.primary-button{
     margin: 3em auto;
     padding: 1em;
 
     border: 0;
     border-radius: 0.5em;
 
-    background-color: rgb(14, 50, 38);
+    background-color: #19323C;
     box-shadow: 2px 4px 10px rgb(60, 60, 60, 10%);
 }
 
-button a{
+.primary-button a{
     color: aliceblue;
     font-weight: bold;
     text-decoration: none;
+}
+
+.primary-button:active{
+    background-color: #F3F7F0;
+}
+
+.primary-button a:active{
+    color: #19323C;
 }
 
 /*header style*/
@@ -102,7 +109,6 @@ button a{
     
 }
 
-
 /*footer*/
 
 .footer{
@@ -124,12 +130,22 @@ button a{
 
 /*Banner*/
 .banner{
-    background-color: aquamarine;
+    background-color: #F2545B;
+    color: #F3F7F0;
+    height: 480px;
     padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner--text{
-    margin: 5rem 0;
+    font-size: 1.5em;
+}
+
+.banner--text{
+
 }
 
 
@@ -270,6 +286,14 @@ button a{
     a{
         font-size:1em;
     }
+
+    .primary-button:hover{
+        background-color: #F3F7F0;
+    }
+    
+    .primary-button a:hover{
+        color: #19323C;
+    }
     
     /*header navigation*/
     .navbar-hamburger{
@@ -317,18 +341,6 @@ button a{
 
     header li{
         padding-right: 1.5em;
-    }
-
-    .banner{
-        padding: 2em 4em;
-    }
-
-    .banner--text{
-        padding-right: 12em;
-    }
-
-    .banner button{
-        margin: 3em 0;
     }
 
     .regular{
