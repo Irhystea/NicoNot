@@ -145,67 +145,66 @@ body{
 }
 
 /*Explanation*/
-.explanation{
+.regular{
     margin: 2rem 1rem;    
-    border-bottom: 1px solid rgb(112, 155, 135);
+    border-bottom: 1px solid #F2545B;
+}
+
+.explanation-text{
+    margin: 2rem 1rem;
 }
 
 .explanation-steps{
-    background-color: #A93F55;
+    background-color: #19323C;
     color: #F3F7F0;
+
+    border-radius: 4px;
     padding: 1rem;
+    margin-bottom: 2rem;
 
     display: flex;
     flex-direction: column;
 }
 
-.steps-individual{
+.explanation-steps h3{
+    font-size: xx-large;
+    margin: 0 2rem;
+
+    opacity: 40%;
+}
+
+.explanation-steps ol{
     display: flex;
+    flex-direction: column;
+
+    margin: 0 1rem;
+    padding: 0 2rem 2rem 0.5rem;
 }
 
-.regular img{
-    width: 100%;
-    margin: 1.5em auto;
-}
-
-.regular .steps{
-    background-color: rgb(152, 215, 194);
-    border-radius: 0.5em;
-
-    margin-top: 2em;
-    padding: 0.5em 1em;
-    }
-
-.regular .steps h3{
-    padding: 0 0 0.5em;
-    border-bottom: 1px solid rgb(56, 56, 56);
-}
-
-.regular .steps ol{
-   padding: 0 1em;
-   
-}
-.regular .steps li{
-   margin: 1em 0;
-}
-
-.regular .steps li::marker{
+.explanation-steps li::marker{
+    font-size: x-large;
     font-weight: bold;
-    color: rgb(92, 156, 150);
+    color: #f3f7f0ad;
+}
+
+.explanation-steps h4{
+   margin: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.explanation-steps p{
+    margin: 0.5rem 0rem 0.5rem 1rem;
  }
-
-.regular .steps h4{
-    margin: 0.5em 0;
-}
-
-.regular .steps p{
-    margin: 0.5em 0;
-}
 
 /*Articles*/
 
-.articlebutton{
-    background-color: aliceblue;
+.article-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.active{
+    background-color: #F2545B;
     width: 100%;
     margin: 1em 0;
 
@@ -213,21 +212,61 @@ body{
     box-shadow: 2px 4px 10px rgb(60, 60, 60, 10%);
 }
 
-.articlebutton img{
+.active a{
+    text-decoration: none;
+    color: #F3F7F0;
+}
+
+.active img{
     width: 100%;
     margin: 0 auto 1em;
 
     border-radius: 0.5em 0.5em 0em 0em;
 }
 
-.articlebutton h3{
+.active h3{
     padding: 0em 0.5em;
     margin: 0.5em;
 }
 
-.articlebutton p{
+.active p{
     margin: 0.5em 0.5em 1em;
     padding: 0em 0.5em 1em
+}
+
+.disabled{
+    opacity: 40%;
+    background-color: #19323c;
+    width: 100%;
+    margin: 1em 0;
+
+    border-radius: 0.5em;
+}
+
+.disabled a{
+    text-decoration: none;
+    color: #F3F7F0;
+}
+
+.disabled img{
+    width: 100%;
+    margin: 0 auto 1em;
+
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.disabled h3{
+    padding: 0em 0.5em;
+    margin: 0.5em;
+}
+
+.disabled p{
+    margin: 0.5em 0.5em 1em;
+    padding: 0em 0.5em 1em
+}
+
+.regular .primary-button{
+    margin: 2rem;
 }
 
 /*Form*/
