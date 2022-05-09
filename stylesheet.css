@@ -1,4 +1,4 @@
-/*Foundation: Colours, Font, etc.*/
+/*foundation.*/
 *{
     box-sizing: border-box;
 }
@@ -12,6 +12,11 @@ body{
     
     margin: 0;
     padding: 0;
+}
+
+.regular{
+    margin: 2rem 1rem;    
+    border-bottom: 1px solid #F2545B;
 }
 
 .primary-button{
@@ -39,7 +44,7 @@ body{
     color: #19323C;
 }
 
-/*header style*/
+/*navigation bar*/
 
 .navbar{
     display: flex;
@@ -63,7 +68,9 @@ body{
     text-transform: uppercase;
 }
 
-/*.navbar-hamburger{
+/* The implementation of the hamburger menu was discontinued because it required JavaScript.
+
+.navbar-hamburger{
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -85,7 +92,7 @@ body{
 }*/
 
 .navbar-links ul{
-    margin:1em 0em 0.5em;
+    margin:1em 0 0.5em;
     padding:0;
 
     display: flex;
@@ -128,7 +135,7 @@ body{
     color: #F2545B;
 }
 
-/*Banner*/
+/*banner*/
 .banner{
     background-color: #F2545B;
     color: #F3F7F0;
@@ -144,12 +151,7 @@ body{
     font-size: 1.5em;
 }
 
-/*Explanation*/
-.regular{
-    margin: 2rem 1rem;    
-    border-bottom: 1px solid #F2545B;
-}
-
+/*explanation*/
 .explanation-text{
     margin: 2rem 1rem;
 }
@@ -188,14 +190,14 @@ body{
 }
 
 .explanation-steps h4{
-   margin: 0.5rem 0rem 0.5rem 1rem;
+   margin: 0.5rem 0 0.5rem 1rem;
 }
 
 .explanation-steps p{
-    margin: 0.5rem 0rem 0.5rem 1rem;
+    margin: 0.5rem 0 0.5rem 1rem;
  }
 
-/*Articles*/
+/*articles*/
 
 .article-buttons{
     display: flex;
@@ -221,7 +223,7 @@ body{
     width: 100%;
     margin: 0 auto 1em;
 
-    border-radius: 0.5em 0.5em 0em 0em;
+    border-radius: 0.5em 0.5em 0 0;
 }
 
 .active h3{
@@ -231,7 +233,7 @@ body{
 
 .active p{
     margin: 0.5em 0.5em 1em;
-    padding: 0em 0.5em 1em
+    padding: 0 0.5em 1em
 }
 
 .disabled{
@@ -252,17 +254,17 @@ body{
     width: 100%;
     margin: 0 auto 1em;
 
-    border-radius: 0.5em 0.5em 0em 0em;
+    border-radius: 0.5em 0.5em 0 0;
 }
 
 .disabled h3{
-    padding: 0em 0.5em;
+    padding: 0 0.5em;
     margin: 0.5em;
 }
 
 .disabled p{
     margin: 0.5em 0.5em 1em;
-    padding: 0em 0.5em 1em
+    padding: 0 0.5em 1em
 }
 
 .regular .primary-button{
@@ -270,18 +272,20 @@ body{
     display: block;
 }
 
+/*collaborators*/
+
 .collaborators{
     display: flexbox;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .collaborators img{
     width: 100%;
-    height: 5rem;
+    height: 15em;
     margin: 1rem 0;
 }
 
-/*Form*/
+/*form*/
 .form{
     margin: 1rem 0;
     
@@ -370,22 +374,22 @@ body{
     margin: 1.5em 0;
 }
 
-#test-submit{
+.test-submit{
     margin: 0;
 }
 
-#test-submit h2{
+.test-submit h2{
     padding: 0;
     margin: 1rem 0;
 }
 
-#test-submit p{
+.test-submit p{
     font-size: 0.75rem;
     font-weight: 400;
     margin: 1rem 0;
 }
 
-#test-submit div{
+.test-submit div{
     display: flex;
     justify-content:space-between;
     flex-direction: row;
@@ -393,12 +397,12 @@ body{
     margin: 1rem 0;
 }
 
-#test-submit div input[type="email"]{
+.test-submit div input[type="email"]{
     width: 100%;
     padding: 1rem;
 }
 
-#test-submit div input[type="submit"]{
+.test-submit div input[type="submit"]{
     padding: 1rem;
 
     border: 0;
@@ -409,7 +413,7 @@ body{
     box-shadow: 2px 4px 10px rgb(60, 60, 60, 10%);
 }
 
-#test-submit div input[type="submit"]:active{
+.test-submit div input[type="submit"]:active{
     background-color: #F3F7F0;
     color: #19323C;
 }
@@ -425,11 +429,17 @@ body{
     object-fit: cover;
 
 }
-/*Media*/
+
 
 @media screen and (min-width: 1024px){
+    
+    /*foundation*/
     body{
         font-size: 1rem;
+    }
+
+    .regular{
+        margin: 2rem 8rem;
     }
 
     .primary-button{
@@ -451,7 +461,7 @@ body{
         color: #19323C;
     }
 
-    /*header navigation*/
+    /*navigation bar*/
     .navbar-hamburger{
           display: none;
     }
@@ -461,7 +471,7 @@ body{
     }
 
     .navbar-links ul{
-        margin:1em 0em 0.5em;
+        margin:1em 0 0.5em;
         padding:0;
     
         display: flex;
@@ -485,7 +495,7 @@ body{
         border-top: 2px solid #F2545B;
     }
     
-    /*main*/
+    /*banner*/
     .banner{
         padding: 10rem 5rem;
         height: 560px;
@@ -493,10 +503,7 @@ body{
         font-size: 1em;
     }
 
-    .regular{
-        margin: 2rem 8rem;
-    }
-
+    /*explanation*/
     .explanation-steps{
         background-color: #19323C;
         color: #F3F7F0;
@@ -512,9 +519,6 @@ body{
     .explanation-steps h3{
         font-size: 3em;
         position: relative;
-        margin: 0 2rem;
-    
-        opacity: 40%;
     }
     
     .explanation-steps ol{
@@ -524,7 +528,7 @@ body{
         justify-content: center;
     
         margin: 0.5em;
-        padding: 0em 2em;
+        padding: 0 2em;
     }
     
     .explanation-steps li{
@@ -533,6 +537,7 @@ body{
         
     }
 
+    /*articles*/
     .article-buttons{
         flex-direction: row;
         justify-content: center;
@@ -567,6 +572,7 @@ body{
         padding: 0 1em 1em;
     }
 
+    /*collaborators*/
     .collaborators{
         flex-direction: row;
         justify-content: space-between;
@@ -580,6 +586,7 @@ body{
         margin: 1em;
     }
 
+    /*form*/
     .form section{
         padding: 2rem;
         margin: 2rem 0;
