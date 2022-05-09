@@ -15,11 +15,11 @@ body{
 }
 
 .primary-button{
-    margin: 3em auto;
-    padding: 1em;
+    margin: 3rem auto;
+    padding: 1rem;
 
     border: 0;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 
     background-color: #19323C;
     box-shadow: 2px 4px 10px rgb(60, 60, 60, 10%);
@@ -283,7 +283,8 @@ body{
 
 /*Form*/
 .form{
-    margin: 1em;
+    margin: 1rem 0;
+    
 }
 
 .form section{
@@ -291,19 +292,73 @@ body{
     margin: 1em 0;
     border-radius: 0.5em;
 
-    background-color: rgb(152, 215, 194);
+    color: #F3F7F0;
+    background-color: #A93F55;
 }
 
 .form h2{
     margin:0 0 1em;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid rgb(56, 56, 56);
+    border-bottom: 1px solid #F3F7F0;
 }
 
 .form p{
     margin: 0.5em 0;
 
     font-weight: 500;
+}
+
+.form textarea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #19323C;
+    
+    width: 100%;
+    height: 5rem;
+    resize: none;
+
+    border-radius: 0.25em;
+    border-style: none;
+    padding: 0.5rem 1rem;
+}
+
+.form input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #19323C;
+
+    border-radius: 0.25em;
+    border-style: none;
+}
+
+.form input[type=checkbox]{
+    border-style: none;
+    margin: 0.5em 1em;
+}
+
+.form input[type=date]{
+    width: 100%;
+    padding: 0 0.5rem;
+    height: 1.75rem;
+}
+
+.form input[type=number]{
+    width: 100%;
+    height: 1.75rem;
+    padding: 0 0.5rem;
+}
+
+.form input[type=radio]{
+    border-style: none;
+    margin: 0.5em 1em;
+}
+
+.form input[type=range]{
+    width: 90%;
+}
+
+.form input[type=text]{
+    width: 100%;
+    padding: 0 0.5rem;
+    height: 1.75rem;
 }
 
 .form ul{
@@ -315,33 +370,77 @@ body{
     margin: 1.5em 0;
 }
 
-#submit{
-    margin: 1emem;
+#test-submit{
+    margin: 0;
 }
 
-#submit h2{
-    margin-bottom: 0.75em;
+#test-submit h2{
+    padding: 0;
+    margin: 1rem 0;
 }
 
-#submit p{
+#test-submit p{
+    font-size: 0.75rem;
     font-weight: 400;
-    margin: 0.75em 0 1em;
+    margin: 1rem 0;
 }
 
-#submit div{
-    margin: 1em 0;
-    padding-bottom: 1em;
+#test-submit div{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+
+    margin: 1rem 0;
 }
 
+#test-submit div input[type="email"]{
+    width: 100%;
+    padding: 1rem;
+}
+
+#test-submit div input[type="submit"]{
+    padding: 1rem;
+
+    border: 0;
+    border-radius: 0.25rem;
+
+    background-color: #19323C;
+    color: #F3F7F0;
+    box-shadow: 2px 4px 10px rgb(60, 60, 60, 10%);
+}
+
+#test-submit div input[type="submit"]:active{
+    background-color: #F3F7F0;
+    color: #19323C;
+}
+
+/*video*/
+.video{
+    margin: 1rem 1rem;
+}
+
+.video iframe{
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+
+}
 /*Media*/
 
 @media screen and (min-width: 1024px){
     body{
-        font-size: 1.5em;
+        font-size: 1rem;
     }
 
-    a{
-        font-size:1em;
+    .primary-button{
+        margin: 4em auto;
+        padding: 2em;
+
+        box-shadow: 4px 8px 20px rgb(60, 60, 60, 10%);
+    }
+
+    .primary-button a{
+        font-size: 1em;
     }
 
     .primary-button:hover{
@@ -351,10 +450,14 @@ body{
     .primary-button a:hover{
         color: #19323C;
     }
-    
+
     /*header navigation*/
     .navbar-hamburger{
           display: none;
+    }
+
+    .navbar{
+        padding: 1em 3em;
     }
 
     .navbar-links ul{
@@ -382,50 +485,116 @@ body{
         border-top: 2px solid #F2545B;
     }
     
-    header{
-        overflow: hidden;
-    }
-    
-    header h1{
-        margin: 0px;
-        text-align: leftt;
-    }
-    
-    nav ul{
-        list-style: none; 
-        padding:0;
-        }    
+    /*main*/
+    .banner{
+        padding: 10rem 5rem;
+        height: 560px;
 
-    header li{
-        padding-right: 1.5em;
+        font-size: 1em;
     }
 
     .regular{
-        margin: 2em;
-        padding: 2em 1.5em 2em;
+        margin: 2rem 8rem;
     }
 
-    .regular img{
-        display: inline;
-
-        height: 8em;
+    .explanation-steps{
+        background-color: #19323C;
+        color: #F3F7F0;
+    
+        border-radius: 4px;
+        padding: 2em 5em;
+        margin-bottom: 2rem;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .explanation-steps h3{
+        font-size: 3em;
+        position: relative;
+        margin: 0 2rem;
+    
+        opacity: 40%;
+    }
+    
+    .explanation-steps ol{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        margin: 0.5em;
+        padding: 0em 2em;
+    }
+    
+    .explanation-steps li{
         width: 45%;
+        margin: 0 0.5rem 2rem;
+        
     }
 
-    .articlebutton{
-        width: 45%;
-        float: left;
-        margin:1em 2.5% 3em;
-    }
-
-    .articlebutton img{
+    .article-buttons{
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
-        height: 100%;
     }
 
-    .form{
-        margin: 2em;
+    .active{
+        width: 50%;
+        margin: 1em;
     }
 
+    .active h3{
+        margin: 1em;
+    }
 
+    .active p{
+        margin: 1em;
+        padding: 0 1em;
+    }
+
+    .disabled{
+        width: 50%;
+        margin: 1em;
+    }
+
+    .disabled h3{
+        margin: 1em;
+    }
+
+    .disabled p{
+        margin: 1em;
+        padding: 0 1em 1em;
+    }
+
+    .collaborators{
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .collaborators img{
+        width: 45%;
+
+        height: 15em;
+        margin: 1em;
+    }
+
+    .form section{
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+
+    .form ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        justify-content:flex-start;
+    }
+
+    .form li{
+        width: 45%;
+        margin: 2em 1em;
+    }
 }
